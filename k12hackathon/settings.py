@@ -79,12 +79,14 @@ WSGI_APPLICATION = 'k12hackathon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'omr-hackathon',
-        'USER':'postgres',
-        'PASSWORD':'devuser',
-        'HOST': 'localhost'
+        'NAME': 'd9e1o8keb1nmb2',
+        'USER':'mvjmmgcmhxihmn',
+        'PASSWORD':'778fda9fb1a583fc408ecf67ec51cda81c68bc91bdabe1cb32bb8d0a9ca8ddde',
+        'PORT':5432,
+        'HOST': 'ec2-23-20-70-32.compute-1.amazonaws.com'
     }
 }
+
 
 
 # Password validation
@@ -124,7 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = 'media'
