@@ -5,7 +5,7 @@ from .user_scripts import *
 import numpy as np
 import urllib
 import copy
-import json
+
 from .omr_main import evaluateOMR
 
 from .answer_key import evaluateAnswerKey
