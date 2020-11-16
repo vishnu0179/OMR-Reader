@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import Students, TestSet
-import cv2
 from .user_scripts import *
 import numpy as np
 import urllib
@@ -21,8 +20,8 @@ def home(request):
         score = 90
         save_details(enrollmentno, test_id, score, img)  
         arr = np.asarray(bytearray(img2.read(-1)), dtype=np.uint8)
-        imag = cv2.imdecode(arr, -1)
-        print(imag.shape)
+        # imag = cv2.imdecode(arr, -1)
+        # print(imag.shape)
         print_details()
         # url = user.answerSheet
         # req = urllib.request.urlopen(url)
