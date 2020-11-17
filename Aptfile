@@ -2,3 +2,4 @@ libpq-dev
 libsm-dev
 libsm6
 libglib2.0-0
+libGL.so.1
