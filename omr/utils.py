@@ -252,7 +252,7 @@ def calculateScore(answerKey, responseDict, correctMarks, negativeMarks = 0):
             if responseDict[key] == answerDict[key]:
                 score = score + correctMarks
             else:
-                score = score - abs(negativeMarks)
+                score = score - negativeMarks
 
     return score
 
