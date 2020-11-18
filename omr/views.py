@@ -77,3 +77,19 @@ def getSetDetails(request):
             'status' : 200,
             'data' : student_list
         })
+    
+def checkImg(request):
+    if request.method == 'POST':
+        imgFile = request.FILES.get('file')
+        correctMarks = request.POST.get('correct-marks')
+        negativeMarks = request.POST.get('negative')
+        setId = request.POST.get('set-id')
+        answeKey = "check"
+
+        test = TestSet(setId = setId, answerKey = answerKey, answerKeyImg = imgFile, correctMarks= correctMarks, negativeMarks=negativeMarks)
+        test.save()
+        return JsonResponse({
+            'status' : 200,
+            'message' : 'File Uploaded',
+            'data' : answerKey
+        })
