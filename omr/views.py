@@ -84,12 +84,12 @@ def checkImg(request):
         correctMarks = request.POST.get('correct-marks')
         negativeMarks = request.POST.get('negative')
         setId = request.POST.get('set-id')
-        answeKey = "check"
+        answerKey = "check"
 
         test = TestSet(setId = setId, answerKey = answerKey, answerKeyImg = imgFile, correctMarks= correctMarks, negativeMarks=negativeMarks)
         test.save()
-        return JsonResponse({
-            'status' : 200,
-            'message' : 'File Uploaded',
-            'data' : answerKey
-        })
+    return JsonResponse({
+        'status' : 200,
+        'message' : 'File Uploaded',
+        'data' : answerKey
+    })
