@@ -11,6 +11,9 @@ def save_details(data, img, setId):
     score = data['score']
     answerKey = data['response']
     answerKey = json.dumps(answerKey)
+    rs = Students.objects.filter(enrollment= enrollmentno)
+    if rs.exists():
+        Students.objects.filter(enrollment= enrollmentno).delete()
     user = Students(enrollment = enrollmentno, testId =test_id, score = score, answerKey= answerKey,answerSheet = img,setId=setId)    
     user.save()
 

@@ -12,21 +12,7 @@ from .answer_key import evaluateAnswerKey
 
 # Create your views here.
 def home(request):
-    # if request.method == 'POST':
-    #     img = request.FILES.get('file')
-    #     img2 = copy.deepcopy(img)
-    #     enrollmentno = '31423'
-    #     test_id = '134352'
-    #     score = 90
-    #     save_details(enrollmentno, test_id, score, img)  
-    #     arr = np.asarray(bytearray(img2.read(-1)), dtype=np.uint8)
-    #     # imag = cv2.imdecode(arr, -1)
-    #     # print(imag.shape)
-    #     print_details()
-    #     # url = user.answerSheet
-    #     # req = urllib.request.urlopen(url)
-    #     # print(imag.shape)
-    #     print('kuch toh hua hain')
+    
     return HttpResponse("Hello this is an omr app for hackathon")
 
 
