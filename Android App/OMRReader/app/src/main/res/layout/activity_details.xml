@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Details.DetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            ></TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            app:helperTextEnabled="true"
+
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/subName"
+                android:inputType="textCapWords|textCapSentences"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/question">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/correct">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/wrong">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeFloatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/ic_next"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_round"
+        />
+</FrameLayout>

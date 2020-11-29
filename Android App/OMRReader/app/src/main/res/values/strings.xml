@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OMR Reader</string>
+    <string name="subject">Subject Name</string>
+    <string name="question">Number of questions</string>
+    <string name="correct">Marks for correct answer</string>
+    <string name="wrong">Marks for wrong answer</string>
+    <string name="details">Subject Details</string>
+    <string name="answer">Upload Student Answer Sheet</string>
+    <string name="btn">Result</string>
+    <string name="homeText">Tap on + button to \n create exam set</string>
+    <string name="studentText">Tap on + button to upload \n student answer key</string>
+    <string name="home">Student Test Set</string>
+</resources>
